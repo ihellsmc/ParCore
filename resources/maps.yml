@@ -1,0 +1,68 @@
+lobby:
+  location:
+    world: "world"
+    x: -134.5
+    y: 70
+    z: 468.5
+    yaw: -180
+    pitch: 0
+
+maps:
+  grasslands:
+    location:
+      world: "world"
+      x: -126.5
+      y: 78
+      z: 458.5
+      yaw: -180
+      pitch: 0
+    name: "&a&lGrasslands"
+    description:
+      - "&7Jump across the islands as you"
+      - "&7try to reach the end!"
+      - " "
+      - "&7Your best time is &a{time} &7seconds"
+      - "&7You have played this map {played} times"
+      - ""
+      - "&aLeft-click &7to play"
+      - "&aRight-click &7to view top times"
+      - "&7Difficulty: {difficulty}"
+    icon: "GRASS" # Please use the spigot block names found https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+    blocks:
+      set-checkpoint: # Which blocks, when stood on, should set a checkpoint?
+        - "EMERALD_BLOCK"
+      complete: # Which blocks, when stood on, should end the map?
+        - "GOLD_BLOCK"
+      illegal: # Which blocks, when stood on, should teleport them back to the checkpoint?
+        - "WATER"
+        - "STATIONARY_WATER"
+    mania-on-completion: 5
+  nether:
+    location:
+      world: "world"
+      x: -148.5
+      y: 71
+      z: 449.5
+      yaw: 180
+      pitch: 0
+    name: "&c&lNether"
+    description:
+      - "&7Make your way through the flames"
+      - "&7as you try to reach the end!"
+      - " "
+      - "&7Your best time is &c{time} &7seconds"
+      - "&7You have played this map {played} times"
+      - ""
+      - "&cLeft-click &7to play"
+      - "&cRight-click &7to view top times"
+      - "&7Difficulty: {difficulty}"
+    icon: "NETHERRACK"
+    blocks:
+      set-checkpoint:
+        - "EMERALD_BLOCK"
+      complete:
+        - "GOLD_BLOCK"
+      illegal: # Which blocks, when stood on, should teleport them back to the checkpoint?
+        - "WATER"
+        - "STATIONARY_WATER"
+    mania-on-completion: 5

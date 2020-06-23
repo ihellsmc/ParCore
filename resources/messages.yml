@@ -1,0 +1,129 @@
+no-permission: "&c&lSorry! &cYou do not have permission to do this."
+invalid-command: "&c&lSorry! &cThis command is not recognized!"
+map-not-found: "&c&lSorry! &cWe cannot find that map!"
+player-not-found: "&c&lSorry! &cWe cannot find that player!"
+on-mania: "&d&lCongratulations! &dYou just earned {mania} mania for playing this map for the first time!"
+on-finish: "&d&lCongratulations! &dYou just finished the map!"
+on-record: "&eYou just beat your time record by {difference} seconds!"
+
+help:
+  - " "
+  - "&8&m&l------------------------------------------------"
+  - "&d/maps: &fOpen the maps GUI"
+  - "&d/leave: &fLeave the map you are currently in"
+  - "&d/maptp <map> [player]: &fTeleport a player to a map"
+  - "&d/player <player>: &fShow real-time data about a player"
+  - "&d/time <player> <map>: &fShow a players top time on a map"
+  - "&d/loc: &fGet your exact location"
+  - "&d/help: &fShow this page"
+  - "&8&m&l------------------------------------------------"
+  - " "
+
+map-info:
+  - " "
+  - "&8&m&l------------------------------------------------"
+  - "&dMap Name: &f{name}"
+  - "&dDifficulty: &f{difficulty}"
+  - "&dTimes Played: &f{played}"
+  - "&dBest Time: &f{top}"
+  - "&dPersonal Best: &f{pb}"
+  - "&8&m&l------------------------------------------------"
+  - " "
+
+player-votes:
+  format: "&f- {map_name}&f: {vote}"
+  all:
+    - " "
+    - "&8&m&l------------------------------------------------"
+    - "&fShowing votes by &d{player}"
+    - "{format}"
+    - "&8&m&l------------------------------------------------"
+    - " "
+  specific:
+    - " "
+    - "&8&m&l------------------------------------------------"
+    - "&fShowing vote for {map} &fby &d{player}"
+    - "{format}"
+    - "&8&m&l------------------------------------------------"
+    - " "
+
+player-info:
+  - " "
+  - "&8&m&l------------------------------------------------"
+  - "&dPlayer Name: &f{player}"
+  - "&dCurrent Map: &f{map}"
+  - "&dCurrent Mode: &f{mode}"
+  - "&dCurrent Time: &f{time}"
+  - "&dPersonal Best: &f{pb}"
+  - "&dTimes Played: &f{played}"
+  - "&dHas Players Hidden: &f{hidden}"
+  - "&8&m&l------------------------------------------------"
+  - " "
+
+best-time: "&d{player}&f's best time on {map} is &d{time} &fseconds!"
+
+maps-gui:
+  title: "&a&lSelect a map to play"
+  cancel: "&c&lCancel"
+  # Everything else for this GUI is customizable in the maps.yml file
+
+mode-selection-gui:
+  title: "&d&lPlease select a mode"
+  cancel: "&c&lCancel"
+  time-trials:
+    name: "&d&lTIME TRIALS"
+    lore:
+      - "&7Race against the clock and compete"
+      - "&7to be the fastest time!"
+    no-permission: "&cSorry, but you aren't allowed to play &d&lTIME TRIALS"
+  casual:
+    name: "&b&lCASUAL"
+    lore:
+      - "&7Navigate across the course and try"
+      - "&7to reach the end!"
+    no-permission: "&cSorry, but you aren't allowed to play &b&lCASUAL"
+
+top-times-gui:
+  title: "&b&lShowing top times for {map}"
+  cancel: "&c&lCancel"
+  format:
+    top-3:
+      name: "&6&l#{position} &f{name}"
+      lore:
+        - "&7With a time of &6{time} &7seconds!"
+    other:
+      name: "&7&l#{position} &f{name}"
+      lore:
+        - "&7With a time of &f{time} &7seconds!"
+
+rating-gui:
+  title: "&b&lPlease rate this map"
+  cancel: "&c&lCancel"
+  very-easy:
+    name: "&b&lVERY EASY"
+    lore:
+      - "&7Click here to rate this"
+      - "&7map &bvery easy&7!"
+  easy:
+    name: "&a&lEASY"
+    lore:
+      - "&7Click here to rate this"
+      - "&7map &aeasy&7!"
+  medium:
+    name: "&e&lMEDIUM"
+    lore:
+      - "&7Click here to rate this"
+      - "&7map &emedium&7!"
+  hard:
+    name: "&c&lHARD"
+    lore:
+      - "&7Click here to rate this"
+      - "&7map &chard&7!"
+  insane:
+    name: "&5&lINSANE"
+    lore:
+      - "&7Click here to rate this"
+      - "&7map &5insane&7!"
+  on-submission:
+    - "&a&lThanks! &aYour feedback is appreciated!"
+    - "&aYou voted this map {difficulty}"

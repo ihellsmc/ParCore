@@ -1,0 +1,5 @@
+main: com.ihells.parcore.ParCore
+name: ParCore
+version: "1.0"
+author: "iHells#7514"
+description: "The ultimate parkour plugin!"
